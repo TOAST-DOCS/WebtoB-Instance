@@ -6,10 +6,10 @@ WebtoB Instance is designed to handle large-scale transactions on the web, effec
 #### Intelligent Dynamic Load Balancing
 
 * Request Queuing
-  * Supports a reliable processing without system interruptions by having a queue that stores massive requests, serving as a buffer to JEUS Instance.
+    * Supports a reliable processing without system interruptions by having a queue that stores massive requests, serving as a buffer to JEUS Instance.
 
 * Intelligent Dynamic Load Balancing
-  * Provides services by always maintaining connection with JEUS Instance for communication. Performs an intelligent dynamic load balancing by immediately identifying the load status of JEUS Instance from WebtoB Instance, which is differentiated from the connection method of commonly used web servers like Apache.
+    * Provides services by always maintaining connection with JEUS Instance for communication. Performs an intelligent dynamic load balancing by immediately identifying the load status of JEUS Instance from WebtoB Instance, which is differentiated from the connection method of commonly used web servers like Apache.
 
 #### Enhanced Strong Security
 Performs communication without opening a firewall port on incoming requests, dramatically improving security when configuring an internal web system.

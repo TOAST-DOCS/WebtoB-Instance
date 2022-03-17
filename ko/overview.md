@@ -4,11 +4,11 @@ WebtoB Instance는 웹상에서의 대규모 트랜잭션 처리에 적합하도
 ### 주요 기능
 #### 지능화된 동적 부하분산 처리
 
-* Request Queuing 
-  * 대량의 요청을 저장할 수 있는 큐가 존재하여 JEUS Instance의 방파제와 같은 역할을 수행하며 시스템 중단 없이 안정적인 처리를 지원합니다.
+* Request Queuing
+    * 대량의 요청을 저장할 수 있는 큐가 존재하여 JEUS Instance의 방파제와 같은 역할을 수행하며 시스템 중단 없이 안정적인 처리를 지원합니다.
 
-* Intelligent Dynamic Load Balancing 
-  * JEUS Instance와 항상 연결을 유지한 채 통신을 수행하여 서비스를 제공합니다. Apache 등과 같은 일반적인 웹 서버와의 연결 방식과는 차별화된 것으로 WebtoB Instance에서 JEUS Instance의 부하상황을 즉각적으로 파악하여 지능화된 부하분산이 가능합니다.
+* Intelligent Dynamic Load Balancing
+    * JEUS Instance와 항상 연결을 유지한 채 통신을 수행하여 서비스를 제공합니다. Apache 등과 같은 일반적인 웹 서버와의 연결 방식과는 차별화된 것으로 WebtoB Instance에서 JEUS Instance의 부하상황을 즉각적으로 파악하여 지능화된 부하분산이 가능합니다.
 
 #### 향상된 강력한 보안
 외부에서 들어오는 요청에 대하여 방화벽 포트 오픈 없이 통신이 가능하여 내부 웹 시스템 구성 시 보안성을 대폭 향상시킬 수 있습니다.

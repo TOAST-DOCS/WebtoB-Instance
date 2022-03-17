@@ -4,11 +4,11 @@ WebtoB Instanceは、Web上での大規模トランザクション処理が行�
 ### 主な機能
 #### インテリジェントな動的負荷分散処理
 
-* Request Queuing 
-  * 大量のリクエストを保存することができるキューが存在し、JEUS Instanceの防波堤のような役割を果たし、システムを中断することなく安定した処理をサポートします。
+* Request Queuing
+    * 大量のリクエストを保存することができるキューが存在し、JEUS Instanceの防波堤のような役割を果たし、システムを中断することなく安定した処理をサポートします。
 
-* Intelligent Dynamic Load Balancing 
-  * JEUS Instanceと常に接続を維持したまま通信を行ってサービスを提供します。Apacheなどの一般的なWebサーバーとの接続方式とは差別化されており、WebtoB InstanceでJEUS Instanceの負荷状況をすぐに把握し、インテリジェントな負荷分散が可能です。
+* Intelligent Dynamic Load Balancing
+    * JEUS Instanceと常に接続を維持したまま通信を行ってサービスを提供します。Apacheなどの一般的なWebサーバーとの接続方式とは差別化されており、WebtoB InstanceでJEUS Instanceの負荷状況をすぐに把握し、インテリジェントな負荷分散が可能です。
 
 #### 強化されたセキュリティ
 外部から入るリクエストに対してファイアウォールのポートを開かずに通信が可能で、内部Webシステムを構成するとき、セキュリティを大幅に向上させることができます。
