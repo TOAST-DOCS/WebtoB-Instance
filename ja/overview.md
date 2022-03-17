@@ -1,4 +1,4 @@
-## Application Service > JEUS Instance > 概要
+## Application Service > WebtoB Instance > 概要
 WebtoB Instanceは、Web上での大規模トランザクション処理が行えるように設計され、処理速度の遅延、サーバーのダウンなど、Webシステム上の問題を効果的に解決します。 Webサーバーとしての基本機能の他にセキュリティ、障害対応、大容量処理時の強力な性能を提供します。
 
 ### 主な機能

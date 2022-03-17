@@ -1,4 +1,4 @@
-## Application Service > JEUS Instance > Overview
+## Application Service > WebtoB Instance > Overview
 WebtoB Instance is designed to handle large-scale transactions on the web, effectively solving problems in the web system, such as processing delay and server failures. In addition to basic features as a web server, WebtoB Instance provides powerful performance for security, failure response, and high-volume processing.
 
 
