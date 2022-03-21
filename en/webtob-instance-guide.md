@@ -20,7 +20,7 @@ The image provided by default is CentOS 7.8 with WebtoB5Fix4 (2022.03.22).
 ### Instance Information
 
 * Availability Zone: Select 'Any Availability Zone'
-* Instance Name: The instance name of the server being created
+* Instance Name: The instance name of the server to be created
 * Flavor
     * Any type you want can be selected
 * Key pair: Create a new PEM key or use an existing key, if you create a new one, download and keep the key.
