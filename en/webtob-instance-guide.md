@@ -63,9 +63,9 @@ After entering all the information above, click the **Create Instance** button, 
 WebtoB is installed in `~/apps/webtob`.
 
 
-## Check the Running Status
+## Check the Startup
 
-### Connect to Instance
+### Connect to the Instance
 
 After the instance creation is complete, use SSH to access the instance.
 The instance must have a floating IP associated and TCP port 22 (SSH) must be allowed in the security group.
