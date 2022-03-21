@@ -12,7 +12,7 @@ WebtoB를 사용하려면 먼저 인스턴스를 생성해야 합니다.
 
 ### 이미지
 
-기본 제공되는 이미지는 WebtoB5Fix4 with CentOS 7.8 입니다.
+기본 제공되는 이미지는 CentOS 7.8 with WebtoB5Fix4 (2022.03.22)입니다.
 
 ![image.png](http://static.toastoven.net/prod_webtob_instance/webtob_image2.png)
 
