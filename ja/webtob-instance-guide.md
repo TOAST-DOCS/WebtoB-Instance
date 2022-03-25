@@ -1,51 +1,51 @@
-## Application Service > WebtoB Instance > 사용 가이드
+## Application Service > WebtoB Instance > 使用ガイド
 
-## WebtoB Instance 생성
+## WebtoB Instance作成
 
 
-WebtoB를 사용하려면 먼저 인스턴스를 생성해야 합니다.
+WebtoBを使用するには、まずインスタンスを作成する必要があります。
 
 ![image.png](http://static.toastoven.net/prod_webtob_instance/webtob_image1.png)
 
-**WebtoB Instance 생성**에 있는 **생성** 버튼을 클릭하면 **Compute > Instance > 인스턴스 생성**으로 이동합니다.
+**WebtoB Instance作成**の**作成**ボタンをクリックすると**Compute > Instance > インスタンス作成**に移動します。
 
 
-### 이미지
+### イメージ
 
-기본 제공되는 이미지는 CentOS 7.8 with WebtoB5Fix4 (2022.03.22)입니다.
+基本提供されるイメージはWebtoB5Fix4 with CentOS 7.8です。
 
 ![image.png](http://static.toastoven.net/prod_webtob_instance/webtob_image2.png)
 
 
-### 인스턴스 정보
+### インスタンス情報
 
-* 가용성 영역: 임의의 가용성 영역 선택
-* 인스턴스 이름: 생성되는 서버의 인스턴스 이름
-* 인스턴스 타입
-    * 원하는 타입 모두 선택 가능함
-* 키 페어: PEM 키를 새로 생성하거나 기존 키를 사용, 새로 생성하는 경우 다운로드하여 보관
-* 블록 스토리지 타입
-    * root 볼륨, 빠른 속도를 위해 SSD를 권장
-    * root full이 발생하지 않도록 최소 50GB 이상 설정
+* アベイラビリティゾーン：任意のアベイラビリティゾーンを選択
+* インスタンス名：作成されるサーバーのインスタンス名
+* インスタンスタイプ
+    * 任意のタイプを選択可能
+* キーペア：PEMキーを新しく作成するか、既存のキーを使用。新しく作成する場合はダウンロードして保管
+* ブロックストレージタイプ
+    * rootボリューム、 SSDを推奨(高速なため)
+    * root fullが発生しないように50GB以上に設定
 
 ![image.png](http://static.toastoven.net/prod_webtob_instance/webtob_image3.png)
 
 
-### 네트워크
+### ネットワーク
 
-인스턴스에 연결할 서브넷을 선택합니다.
+インスタンスに接続するサブネットを選択します。
 
 ![image.png](http://static.toastoven.net/prod_webtob_instance/webtob_image4.png)
 
-### 플로팅 IP
+### Floating IP
 
-SSH 접속을 위해 플로팅 IP를 사용합니다.
+SSH接続のためにFloating IPを使用します。
 
 ![image.png](http://static.toastoven.net/prod_webtob_instance/webtob_image5.png)
 
-### 보안 그룹
+### セキュリティグループ
 
-인스턴스에 SSH로 접속이 필요하므로 SSH 포트(22) 접근을 허용한 보안 그룹을 생성해 사용하여야 합니다.
+インスタンスにSSHで接続する必要があるため、SSHポート(22)アクセスを許可したセキュリティグループを作成して使用する必要があります。
 
 ![image.png](http://static.toastoven.net/prod_webtob_instance/webtob_image6.png)
 
@@ -53,42 +53,42 @@ SSH 접속을 위해 플로팅 IP를 사용합니다.
 
 
 
-### 인스턴스 생성 완료
+### インスタンス作成完了
 
-위 정보를 모두 입력한 후 **인스턴스 생성** 버튼을 누르면 아래와 같이 인스턴스가 생성됩니다.
+上記の情報をすべて入力した後、**インスタンス作成**ボタンを押すと、以下のようにインスタンスが作成されます。
 
 
 ![image.png](http://static.toastoven.net/prod_webtob_instance/webtob_image9.png)
 
-WebtoB 는 `~/apps/webtob` 에 설치됩니다.
+WebtoBは`~/apps/webtob`にインストールされます。
 
 
-## 기동 확인
+## 起動確認
 
-### 인스턴스 접속
+### インスタンス接続
 
-인스턴스 생성 완료 후 SSH를 사용하여 인스턴스에 접근합니다.
-인스턴스에 플로팅 IP가 연결되어 있어야 하며 보안 그룹에서 TCP 포트 22(SSH)가 허용되어야 합니다.
+インスタンスの作成が完了したら、SSHを使用してインスタンスにアクセスします。
+インスタンスにFloating IPが接続されていて、セキュリティグループでTCPポート22(SSH)が許可されている必要があります。
 
 ![image.png](http://static.toastoven.net/prod_webtob_instance/webtob_image10.png)
 
-SSH 클라이언트와 설정한 키페어를 이용해 인스턴스에 접속합니다.
-SSH 연결에 대한 자세한 가이드는 [SSH 연결 가이드](https://docs.toast.com/ko/Compute/Instance/ko/overview/#linux)<span style="color:#313338">를 참고하시기 바랍니다.</span>
+SSHクライアントと設定したキーペアを利用してインスタンスに接続します。
+SSH接続の詳細については、[SSH接続ガイド](https://docs.toast.com/ko/Compute/Instance/ko/overview/#linux)<span style="color:#313338">を参照してください。</span>
 
-### 환경 설정 파일 컴파일
+### 環境設定ファイルのコンパイル
 
-wscfl 명령어를 이용하여 설정 파일을 컴파일합니다.
+wscflコマンドを利用して設定ファイルをコンパイルします。
 
 ```
 wscfl -i http.m
 ```
 
-### WebtoB 기동
+### WebtoB起動
 
-wsboot를 이용하여 WebtoB를 기동합니다.
+wsbootを利用してWebtoBを起動します。
 
 ```
 wsboot
 ```
 
-wsadmin을 이용하여 상태를 확인하거나 제어할 수 있습니다.
+wsadminを利用して状態の確認や制御を行うことができます。
