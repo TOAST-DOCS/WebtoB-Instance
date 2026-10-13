@@ -73,7 +73,7 @@ WebtoB 는 `~/apps/webtob` 에 설치됩니다.
 ![image.png](http://static.toastoven.net/prod_webtob_instance/webtob_image10.png)
 
 SSH 클라이언트와 설정한 키페어를 이용해 인스턴스에 접속합니다.
-SSH 연결에 대한 자세한 가이드는 [SSH 연결 가이드](https://docs.toast.com/ko/Compute/Instance/ko/overview/#linux)<span style="color:#313338">를 참고하시기 바랍니다.</span>
+SSH 연결에 대한 자세한 가이드는 [SSH 연결 가이드](https://docs.nhncloud.com/ko/Compute/Instance/ko/overview/#linux)<span style="color:#313338">를 참고하시기 바랍니다.</span>
 
 ### 환경 설정 파일 컴파일
 
